@@ -1,2 +1,2 @@
-# Hellow friends this is a site for learning selenium with git
-fel free to use it
+Hello all. I am learning selenium with python.
+It is pretty simple and easy.
