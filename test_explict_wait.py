@@ -40,7 +40,6 @@ dates_xpath = "//table[contains(@class, 'rb-monthTable')]//td[contains(@class, '
 dates_elements = driver.find_elements(By.XPATH, dates_xpath)
 
 for day_ele in dates_elements:
-    print(day_ele.text)
     if day_ele.text == "29":
         day_ele.click()
         break
