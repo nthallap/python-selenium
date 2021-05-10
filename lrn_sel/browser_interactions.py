@@ -20,3 +20,4 @@ driver.forward()
 driver.refresh()
 print("after forward page url", driver.current_url)
 driver.quit()
+
