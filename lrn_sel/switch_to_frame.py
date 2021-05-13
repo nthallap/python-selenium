@@ -12,6 +12,7 @@ window_width = driver.execute_script("return window.innerWidth")
 page_height = driver.execute_script("return document.body.clientHeight")
 print(window_width, window_height, page_height)
 
+driver.execute_script("window.scrollBy(0,0);")
 driver.execute_script("window.scrollBy(0, 1000);")
 
 driver.switch_to.frame("courses-iframe")
@@ -24,7 +25,12 @@ driver.find_element_by_xpath("//input[@id='name']").send_keys("Good Morning")
 time.sleep(2)
 
 driver.find_element_by_xpath("//input[@id='alertbtn']").click()
-driver.switch_to_alert().accept()
+# driver.switch_to_alert().accept()
+
+alt = driver.switch_to.alert
+print(alt.text)
+alt.accept()
+
 
 time.sleep(2)
 driver.quit()
