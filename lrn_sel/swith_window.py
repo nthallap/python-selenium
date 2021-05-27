@@ -2,6 +2,7 @@ import time
 
 from selenium.webdriver.common.by import By
 from lrn_sel.basic import basic_setup
+from selenium.webdriver.common.keys import Keys
 
 
 driver = basic_setup()
