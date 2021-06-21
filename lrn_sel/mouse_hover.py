@@ -3,7 +3,7 @@ import time
 from lrn_sel.basic import basic_setup
 from selenium.webdriver import ActionChains
 
-base_url = "https://letskodeit.teachable.com/p/practice"
+base_url = "https://courses.letskodeit.com/practice"
 mouse_hover = "//div[@class='mouse-hover']"
 driver = basic_setup(base_url)
 
