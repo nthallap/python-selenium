@@ -1,5 +1,5 @@
 import time
-from lrn_sel.basic import basic_setup
+from basic import basic_setup
 from selenium.webdriver.common.by import By
 
 driver = basic_setup()

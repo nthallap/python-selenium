@@ -1,4 +1,4 @@
-from lrn_sel.basic import basic_setup
+from basic import basic_setup
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
 import time

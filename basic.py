@@ -2,7 +2,7 @@ from selenium import webdriver
 from pathlib import Path
 base_url = "https://www.letskodeit.com/practice"
 
-root_path = Path(__file__).parent.parent
+root_path = Path(__file__).parent
 
 def basic_setup(url=base_url):
     driver = webdriver.Chrome()
