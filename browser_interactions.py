@@ -4,8 +4,10 @@ from selenium.webdriver.common.by import By
 from pathlib import Path
 
 driver = basic_setup("https://letskodeit.teachable.com/p/practice")
-driver.find_element(By.CSS_SELECTOR, 'a[href="https://www.letskodeit.com/practice"]').click()
-
+element = driver.find_element(By.CSS_SELECTOR, 'a[href="https://www.letskodeit.com/practice"]')
+href = element.get_attribute('href')
+print("href=", href)
+element.click()
 time.sleep(5)
 print("after click page url", driver.current_url)
 driver.back()
@@ -21,5 +23,7 @@ print("after back page url", driver.current_url)
 driver.forward()
 driver.refresh()
 print("after forward page url", driver.current_url)
+
+
 driver.quit()
 
